@@ -226,6 +226,38 @@ a:hover {
 }
 
 
+.hobby-feature {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 28px;
+    align-items: center;
+}
+
+.hobby-text p {
+    margin-top: 0;
+}
+
+.web-image-card {
+    margin: 0;
+    padding: 16px;
+    background: var(--accent-color);
+    border: 1px solid var(--border-color);
+    border-radius: 22px;
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+.web-interest-image {
+    width: 100%;
+    max-height: 360px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 18px;
+    border: 3px solid var(--accent-strong);
+    display: block;
+}
+
+
 figcaption {
     color: var(--muted-color);
     margin-top: 8px;
@@ -418,7 +450,8 @@ tbody tr:hover {
     .two-column,
     .card-grid,
     .link-categories,
-    .project-grid {
+    .project-grid,
+    .hobby-feature {
         grid-template-columns: 1fr;
     }
 
