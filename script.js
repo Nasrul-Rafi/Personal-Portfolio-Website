@@ -39,9 +39,9 @@ function setupThemeToggle() {
 
             try {
                 localStorage.setItem("rafiTheme", isDark ? "dark" : "light");
-            } catch (error) {
-                /* The toggle still works even if saving the preference is blocked. */
-            }
+            }  catch (error) {
+                console.log("Theme preference could not be saved.");
+        }
 
             themeToggle.textContent = isDark ? "Light Mode" : "Dark Mode";
         });
